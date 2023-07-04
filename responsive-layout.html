@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .flex-item-left {
+      background-color: lightcoral;
+      padding: 10px;
+      flex: 50%;
+    }
+    .flex-item-center {
+      background-color: lightblue;
+      padding: 10px;
+      flex: 50%;
+    }
+    .flex-item-right {
+      background-color: lightgreen;
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    /* Responsive layout - makes a one column-layout instead of two-column layout */
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+      .flex-item-left{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .flex-item-right{
+        margin-bottom: 55px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+</style>
+<body>
+    <div class="flex-container">
+        <div class="flex-item-left">1</div>
+        <div class="flex-item-center">2</div>
+        <div class="flex-item-right">3</div>
+      </div>
+</body>
+</html>
