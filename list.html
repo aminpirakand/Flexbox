@@ -16,21 +16,75 @@
         display: flex;
         flex: 85%;
         background-color:lightgreen;
-        justify-content: space-between;
+        flex-wrap: wrap;
     }
     li{
         padding: 20px;
         list-style: none;
     }
-    .main{
-        flex-wrap: wrap;
-        margin: 5px;
-    }
+
     .cart{
-        width: 200px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        display: flex;
+        width: 400px;
         height: 200px;
-        margin: 5px;
-        flex: 25%;
+        margin: 10px;
+        text-align: center;
+    }
+    .card-description{
+        display: flex;
+        flex: 70%;
+        margin: 2px;
+        flex-direction: column;
+    }
+    .card-image{
+        flex: 30%;
+        margin: 2px;
+    }
+    .description-main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .description-head{
+        text-align: left;
+        padding-left: 10px;
+        flex: 20%;
+    }
+    .description-main{
+        display: flex;
+        flex: 80%;
+    }
+    p{
+        text-align: left;
+        padding: 0px 10px;
+        margin: 0;
+    }
+    .description-left{
+        flex: 80%;
+    }
+    .description-right{
+        position: relative;
+        flex: 20%;
+
+    }
+    .description-right>button{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    .desc-1{
+        margin-top:30px;
+    }
+    .desc-2{
+        margin-top: 20px;
+    }
+    .desc-3{
+        margin-top: 20px;
+    }
+    @media(max-width:630px){
+        .sidebar{display: none;}
     }
 </style>
 <body>
@@ -50,15 +104,34 @@
             </ul>
         </div>
         <div class="main">
-            <div class="cart" style="background-color: blue;"></div>
-            <div class="cart" style="background-color: blue;"></div>
-            <div class="cart" style="background-color: blue;"></div>
-            <div class="cart" style="background-color: blue; "></div>
-            <div class="cart" style="background-color: blue;"></div>
-            <div class="cart" style="background-color: blue;"></div>
-            <div class="cart" style="background-color: blue; "></div>
-            <div class="cart" style="background-color: blue;"></div>
-            <div class="cart" style="background-color: blue;"></div>
+            <div class="cart">
+                <div class="card-description">
+                    <div class="description-head">
+                        <h4>peride 132</h4>
+                    </div>
+                    <div class="description-main">
+                        <div class="description-left">
+                            <div class="desc-1"><p>300kiloometr</p></div>
+                            <div class="desc-2"><p>300kiloometr</p></div>
+                            <div class="desc-3"><p>300kiloometr</p></div>
+                        </div>
+                        <div class="description-right">
+                            <button>chat</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img style="width: 150px; margin-top: 20px;" src="https://s100.divarcdn.com/static/thumbnails/1688556481/AZlGi7pw.jpg" alt="">
+                </div>
+            </div>
+            <div class="cart">2</div>
+            <div class="cart">3</div>
+            <div class="cart">4</div>
+            <div class="cart">5</div>
+            <div class="cart">6</div>
+            <div class="cart">7</div>
+            <div class="cart">8</div>
+            <div class="cart">9</div>
         </div>
     </div>
 </body>
