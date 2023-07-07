@@ -85,21 +85,73 @@
     @media(max-width:630px){
         .sidebar{display: none;}
     }
+    .sidebar ul{
+        padding: 10px;
+    }
+    .sidebar ul li{
+        list-style: none;
+        font-weight: bold;
+        margin: 10px auto;
+        position: relative;
+        overflow: hidden;
+        max-height: 35px;
+        line-height: 35px;
+        transition: 1s;
+        text-transform: capitalize;
+    }
+    .sidebar ul li a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .sidebar ul li > ul{
+        padding: 1px;
+        margin: 0 0 0 20px;
+    }
+    .sidebar ul:first-child{
+        max-height: 50px;
+    }
+    .sidebar ul:first-child{
+        .sidebar ul li a{
+            text-decoration: none;
+            color: aqua;
+        }
+    }
+    .sidebar ul li > ul li{
+        height: 25px;
+        line-height: 20px;
+        font-size: 15px;
+        color: antiquewhite;
+        border-left:1px solid white;
+        margin: 5px;
+        cursor: pointer;
+    }
+
 </style>
 <body>
     <div class="section">
         <div class="sidebar">
             <ul>
-                <li>home</li>
-                <li>garden</li>
-                <li>yyyyss</li>
-                <li>sssss</li>
-                <li>qqqqqq</li>
-                <li>wwwww</li>
-                <li>eeeee</li>
-                <li>rrrrr</li>
-                <li>pioipoiopi</li>
-                <li>ncjnjc</li>
+                <li><a href="">amlak</a>
+                    <ul>
+                        <li>forosh</li>
+                        <li>ejare</li>
+                        <li>kharid</li>
+                    </ul>
+                </li>
+                <li><a href="">vasyael naghlie</a>
+                <ul>
+                    <li><a href="">motor</a></li>
+                    <li><a href="">mashin</a></li>
+                </ul>
+                </li>
+                <li><a href="">tajhizat</a>
+                    <ul>
+                        <li><a href="">motor</a></li>
+                        <li><a href="">mashin</a></li>
+                        <li><a href="">mashin</a></li>
+                        <li><a href="">mashin</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="main">
